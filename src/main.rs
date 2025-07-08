@@ -1,6 +1,9 @@
 // File: src/main.rs
 use crate::args::{Cli, Commands};
 use clap::Parser;
+use log::{error, info};
+
+mod logging;
 mod args;
 mod stats;
 mod rename;
@@ -16,6 +19,8 @@ mod gfa2adj;
 fn main() {
     let cli = Cli::parse();
     
+    logging::setup_logger().expect("Failed to initialize logger");
+
     match &cli.commands {
         Some(Commands::Stats(cmd)) => stats::run(cmd),
         Some(Commands::Rename(cmd)) => rename::run(cmd),
@@ -28,8 +33,8 @@ fn main() {
         Some(Commands::Gfa2fasta(cmd)) => gfa2fasta::run(cmd),
         Some(Commands::Gfa2adj(cmd)) => gfa2adj::run(cmd),
         _ => {
-            println!("No command given. Please provide a command to run.");
-            println!("Use --help to see available commands and options.");
+            error!("No command given. Please provide a command to run.");
+            info!("Use --help to see available commands and options.");
             std::process::exit(1);
         }
     }

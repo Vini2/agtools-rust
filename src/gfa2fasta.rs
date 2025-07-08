@@ -1,8 +1,9 @@
 use crate::args::Gfa2fastaCommand;
+use log::{debug, info};
 
 pub fn run(cmd: &Gfa2fastaCommand) {
     // Here is where you would add your real logic!
-    println!("Converting the following GFA file: {}", cmd.graph);
-    println!("Output will be placed in: {}", cmd.output);
-    println!("gfa2fasta logic would run here!");
+    info!("Converting the following GFA file: {}", cmd.graph);
+    info!("Output will be placed in: {}", cmd.output);
+    debug!("gfa2fasta logic would run here!");
 }
