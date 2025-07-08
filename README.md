@@ -1,6 +1,7 @@
 # agtools: Tools for manipulating assembly graphs
 
 ![GitHub License](https://img.shields.io/github/license/Vini2/agtools-rust)
+[![Rust](https://img.shields.io/badge/Rust-%23000000.svg?e&logo=rust&logoColor=white)](#)
 
 `agtools` is a toolkit for manipulating assembly graphs, with a focus on metagenomic applications. It offers a command-line interface for tasks such as graph format conversion, segment filtering, and component extraction. Additionally, it provides a Python package interface that exposes assembler-specific functionality for advanced analysis and integration.
 
