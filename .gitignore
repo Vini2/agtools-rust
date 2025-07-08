@@ -12,3 +12,6 @@ target/
 # OS files
 .DS_Store
 ._.DS_Store
+
+# Logs
+*.log
