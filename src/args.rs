@@ -1,14 +1,9 @@
-use std::path::Component;
-
 use clap::{Parser, Subcommand, Args};
 
-const ABOUT: &str = "agtools: tools for manipulating assembly graphs
-
-a toolkit for manipulating assembly graphs, 
-with a focus on metagenomic applications";
+const ABOUT: &str = "agtools: tools for manipulating assembly graphs";
 
 #[derive(Parser)]
-#[command(version, about, long_about = ABOUT, subcommand_help_heading = "Available commands")]
+#[command(version, about, subcommand_help_heading = "Available commands", before_help = ABOUT)]
 pub struct Cli {
     #[command(subcommand)]
     pub commands: Option<Commands>,
