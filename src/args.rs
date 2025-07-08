@@ -78,7 +78,7 @@ pub struct FilterCommand {
     pub graph: String,
 
     /// Minimum length of segments to keep
-    #[arg(short, long, value_parser = clap::value_parser!(u64).range(1..), verbatim_doc_comment, default_value_t = 1000)]
+    #[arg(short, long, value_parser = clap::value_parser!(u64).range(1..), default_value_t = 1000)]
     pub min_length: u64,
 
     /// Path to the output folder
@@ -108,7 +108,7 @@ pub struct Fastg2gfaCommand {
     pub graph: String,
 
     /// k-mer size used for the assembly
-    #[arg(short, long, value_parser = clap::value_parser!(u64).range(1..), verbatim_doc_comment, default_value_t = 141)]
+    #[arg(short, long, value_parser = clap::value_parser!(u64).range(1..), default_value_t = 141)]
     pub k_size: u64,
 
     /// Path to the output folder
