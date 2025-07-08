@@ -22,7 +22,7 @@ You can find the newly built executable in `target/release/agtools`. You can add
 
 Run `agtools --help` or `agtools -h` to list the help message for `agtools`.
 
-``bash
+```bash
 agtools: tools for manipulating assembly graphs
 
 
