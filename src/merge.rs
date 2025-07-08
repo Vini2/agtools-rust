@@ -1,7 +1,7 @@
 use crate::args::MergeCommand;
 
 pub fn run(cmd: &MergeCommand) {
-    // Here is where you would add your real merge logic!
+    // Here is where you would add your real logic!
     println!("Merging the following GFA files: {:?}", cmd.graph);
     println!("Output will be placed in: {}", cmd.output);
 
