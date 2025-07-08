@@ -10,7 +10,7 @@ If you don't have Rust, make sure to [install](https://www.rust-lang.org/tools/i
 
 Clone the GitHub repository and build `agtools` as follows.
 
-```bash
+```shell
 git clone https://github.com/Vini2/agtools-rust.git
 cd agtools-rust
 cargo build release
@@ -22,7 +22,7 @@ You can find the newly built executable in `target/release/agtools`. You can add
 
 Run `agtools --help` or `agtools -h` to list the help message for `agtools`.
 
-```bash
+```shell
 agtools: tools for manipulating assembly graphs
 
 
