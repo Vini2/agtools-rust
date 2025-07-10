@@ -9,3 +9,4 @@ clap = { version = "4.5.40", features = ["derive"] }
 colored = "3.0.0"
 fern = { version = "0.7.1", features = ["colored"] }
 log = "0.4.27"
+regex = "1.11.1"
